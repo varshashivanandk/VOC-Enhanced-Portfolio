@@ -28,6 +28,7 @@ This project showcases my background, skills, projects, certifications, contact 
 - - Hamburger menu on small screens
 - - Added JPGs (Certificates)
 - - Downloadable resume link
+- - All social links in footer
 - - Hover animations on buttons and icons
 - - Clean layout and color scheme (pink, red, etc)
 
