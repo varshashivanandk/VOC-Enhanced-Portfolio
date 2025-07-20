@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Varsha Shivanand K</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+   <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Varsha <span>Shivanand K</span></div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+        <form  action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <h1 align="center"> Contact Form </h1>
+        <p align="center">Fill out the form below and I'll get back to you as soon as possible.</p>
+            <input type="hidden" name="access_key" value="9124b626-70bd-4d00-affb-07b9b9ea6705">
+  <label for="name"><b>Name</b></label>
+  <input type="text" id="name" name="name" placeholder="Your name" required>
+
+  <label for="email"><b>Email</b></label>
+  <input type="email" id="email" name="email" placeholder="Your email" required>
+
+  <label for="message"><b>Message</b></label>
+  <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <button type="submit">Submit Form</button>
+</form>
+    </section>
+    </main>
+
+<script>
+  const form = document.querySelector(".contact-form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        alert("Form submitted successfully!");
+        form.reset(); 
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    })
+    .catch(error => {
+      alert("Error: " + error.message);
+    });
+  });
+</script>
+
+ <footer class="footer">
+  <p>
+     <a href="https://github.com/varshashivanandk"><u>GitHub</u></a> |
+      <span class="white"> Email ID: varshashivanand.k@gmail.com </span>|
+    <a href="https://www.linkedin.com/in/varsha-shivanand-k/"><u>LinkedIn</u></a>
+  </p><br>
+    <p>&copy; 2025 Varsha Shivanand K. All rights reserved.</p>
+</footer>
+</body>
+</html>

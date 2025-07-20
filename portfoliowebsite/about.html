@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Varsha Shivanand K</title>
+  <link rel="stylesheet" href="styles/main.css"/>
+  <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+
+  function closeMenu() {
+    document.getElementById("navLinks").classList.remove("active");
+  }
+  </script>
+</head>
+<body>
+<header>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        Varsha <span>Shivanand K</span>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+     <div class="links" id="navLinks">
+  <ul>
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#interests" onclick="closeMenu()">Interests/Hobbies</a></li>
+    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+    <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+  </ul>
+</div>
+    </div>
+  </nav>
+</header>
+    <div class="side-by-side">
+      <div id="about" class="card">
+        <div class="about-flex">
+        <div class="images">
+          <img src="images/photovarsha.jpeg" alt="Varsha's photo">
+        </div>    
+        <div class="about-text">    
+        <h1>About Me</h1>
+        <p>Hello! I'm <strong>Varsha Shivanand K</strong>, an enthusiastic learner currently pursuing the BS Degree in Data Science and Applications from IIT Madras and B.Tech in Computer Science and Engineering at RV University.</p><br>
+        <p>I’m passionate about full stack development and love building websites that are both beautiful and functional. I believe in continuous learning and enjoy solving problems through technology.</p>
+      </div> </div> </div>
+    <div id="education" class="card">
+  <h2>🎓 My Education</h2><br>
+
+  <div class="education-entry">
+    <h3>1. BTech in CSE</h3>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Institution:</strong> RV University</p>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Passing Year:</strong> 2028</p>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:</strong> 9.50/10 CGPA</p>
+  </div><br>
+
+  <div class="education-entry">
+    <h3>2. BS in Data Science and Applications</h3>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Institution:</strong> IIT Madras</p>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Passing Year:</strong> 2028</p>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:</strong> 8.75/10 CGPA</p>
+  </div><br>
+
+  <div class="education-entry">
+    <h3>3. 2nd PUC</h3>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Institution:</strong> Sindhi PU College – Karnataka PU Board</p>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Passing Year:</strong> 2024</p>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:</strong> 98.17%</p>
+  </div><br>
+
+  <div class="education-entry">
+    <h3>4. 1st PUC</h3>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Institution:</strong> Mount Carmel PU College – Karnataka PU Board</p>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Passing Year:</strong> 2023</p>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:</strong> 98%</p>
+  </div><br>
+
+  <div class="education-entry">
+    <h3>5. 10th Grade</h3>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Institution:</strong> Delhi Public School Bangalore North – CBSE</p>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Passing Year:</strong> 2022</p>
+    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:</strong> 97.80%</p>
+  </div>
+</div>
+
+
+  <!-- Skills & Interests -->
+  <div class="side-by-side">
+    <section id="skills" class="card">
+      <h2>🛠️ Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, C, C++</li>
+        <li>Responsive Web Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="interests" class="card">
+      <h2>🎨 Interests / Hobbies</h2>
+      <ol>
+        <li>Reading Books</li>
+        <li>Singing</li>
+        <li>Dancing</li>
+      </ol>
+    </section>
+  </div>
+
+  <!-- Projects -->
+  <section id="projects" class="card">
+    <h2>📁 Projects</h2>
+    <ul>
+      <li>
+        <h3>🛒 ShopCart E-commerce Website</h3><br>
+       <p>ShopCart is a Frontend E-Commerce website built using HTML, CSS, and JavaScript. It provides a complete shopping experience with:<br>
+
+~ A homepage featuring a banner, product listing with category filters, and customer reviews<br>
+
+~ A cart page that dynamically displays items added using localStorage and calculates the total <br>
+
+~ An about/contact page sharing the brand’s story, vision, and support details <br>
+
+~ A review form where users can submit feedback in real-time <br>
+
+The project emphasizes clean UI, interactive elements, and client-side storage, all without using a backend. It’s a great showcase of practical front-end skills, DOM manipulation, and user-focused design.<br>
+          <b>Link :</b>
+          <a href="https://github.com/varshashivanandk/ShopCart--E-COMMERCE-WEBSITE" target="_blank">
+            ShopCart GitHub Repo
+          </a>
+        </p>
+      </li><br><hr><br>
+      <li>
+        <h3>🕵️‍♀️ Crime Records Management System</h3><br>
+        <p> The Crime Records Management System is a full-stack web application designed to help manage and organize crime-related data efficiently. Built using HTML, CSS, JavaScript (frontend), Node.js and Express (backend), and MySQL (database), it allows users to view, add, update, and delete records related to crimes, police stations, victims, suspects, evidence, and case progress.
+<br>
+Key Features : <br>
+
+~ User authentication for secure access <br>
+
+~ Dashboard views of multiple entities with real-time data fetching <br>
+
+~ Full CRUD operations for all major modules <br>
+
+~ Entity relationships such as crimes linked with suspects, victims, and court cases <br>
+
+~ API integration between frontend and backend using fetch requests <br>
+
+This project demonstrates solid skills in full-stack development, database design, and real-world data handling. It focuses on maintaining structured records, ensuring data integrity, and creating a responsive and functional user interface for law enforcement or administrative use. <br>
+          <b>Link :</b>
+          <a href="https://github.com/tharunm490/dbmsproject2" target="_blank">
+            Crime DBMS GitHub Repo
+          </a>
+        </p>
+      </li>
+    </ul><br>
+  </section>
+</div>
+  <!-- Footer -->
+ <footer class="footer">
+  <p>
+    <a href="https://github.com/varshashivanandk"><u>GitHub</u></a> |
+      <span class="white"> Email ID: varshashivanand.k@gmail.com </span>|
+    <a href="https://www.linkedin.com/in/varsha-shivanand-k/"><u>LinkedIn</u></a>
+  </p><br>
+    <p>&copy; 2025 Varsha Shivanand K. All rights reserved.</p>
+</footer>
+</body>
+</html>
